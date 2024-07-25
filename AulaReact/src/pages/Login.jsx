@@ -1,10 +1,9 @@
-import Header from "../components/Header";
+import LoginBox from "../components/LoginBox";
 
 const Login = () => {
     return (
         <>
-        <Header/>
-        Login
+            <LoginBox/>
         </>
     )
 }
