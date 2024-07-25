@@ -1,6 +1,10 @@
+import { StyledNavBar } from "./style";
+
 const NavBar = () => {
     return (
-        <></>
+        <StyledNavBar>
+            
+        </StyledNavBar>
     )
 }
 
