@@ -14,10 +14,14 @@ const StyledLogo = styled.img`
     height: 80px;
     border-radius: 25%;
     margin-top: 2px;
-    margin-left: 6px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 5px black;
 `
 
 const StyledButtons = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
 `
 
