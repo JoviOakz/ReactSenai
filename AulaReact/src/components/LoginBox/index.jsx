@@ -1,4 +1,5 @@
 import { StyledBox, StyledForm, StyledTitle, StyledText, StyledInput, StyledButton } from "./style";
+import Home from "../../pages/Home"
 
 const LoginBox = () => {
     return (
@@ -9,7 +10,7 @@ const LoginBox = () => {
                 <StyledInput type="text" />
                 <StyledText>Senha</StyledText>
                 <StyledInput type="password" />
-                <StyledButton>Enter</StyledButton>
+                <StyledButton><a href={Home}>Enter</a></StyledButton>
             </StyledForm>
         </StyledBox>
     )

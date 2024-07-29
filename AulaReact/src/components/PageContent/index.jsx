@@ -1,10 +1,10 @@
 import { StyledMainContent, StyledImage } from "./style";
-import sexo from '/mbappe.jpg'
+import Mbappe from '/mbappe.jpg'
 
 const PageContent = () => {
     return (
         <StyledMainContent>
-            <StyledImage src={sexo} />
+            <StyledImage src={Mbappe} />
         </StyledMainContent>
     )
 }
