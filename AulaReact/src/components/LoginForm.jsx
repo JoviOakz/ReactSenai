@@ -12,7 +12,7 @@ const LoginForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="login-form">
             <Input
                 type="email"
                 placeholder="Email"
