@@ -1,9 +1,10 @@
-import LoginBox from "../components/LoginBox";
+import LoginForm from "../components/LoginForm";
 
 const Login = () => {
+    
     return (
         <>
-            <LoginBox/>
+            <LoginForm/>
         </>
     )
 }

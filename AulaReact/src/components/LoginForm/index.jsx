@@ -1,10 +1,19 @@
 import { StyledBox, StyledForm, StyledTitle, StyledText, StyledInput, StyledButton } from "./style";
 import Home from "../../pages/Home"
+import { useState } from "react";
 
-const LoginBox = () => {
+const LoginForm = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onSubmit({ email, password })
+    };
+
     return (
         <StyledBox>
-            <StyledForm>
+            <StyledForm onSubmit={handleSubmit}>
                 <StyledTitle>Login Box</StyledTitle>
                 <StyledText>Login</StyledText>
                 <StyledInput type="text" />
@@ -16,4 +25,4 @@ const LoginBox = () => {
     )
 }
 
-export default LoginBox;
+export default LoginForm;
