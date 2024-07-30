@@ -1,4 +1,4 @@
-import { StyledNavBar, StyledLogo, StyledButtons } from "./style";
+import { StyledNavBar, StyledLogo, StyledButtons } from "./NavBar/style";
 import Logo from '/logo.png'
 
 const NavBar = () => {

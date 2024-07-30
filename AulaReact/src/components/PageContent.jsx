@@ -1,4 +1,4 @@
-import { StyledMainContent, StyledImage } from "./style";
+import { StyledMainContent, StyledImage } from "./PageContent/style";
 import Mbappe from '/mbappe.jpg'
 
 const PageContent = () => {
