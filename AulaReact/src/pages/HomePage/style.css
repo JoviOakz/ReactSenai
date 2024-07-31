@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: aquamarine;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar .logo {
@@ -57,4 +58,5 @@
 .footer {
     height: 8vh;
     background-color: aquamarine;
+    box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.3);
 }
