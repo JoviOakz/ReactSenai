@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import Clock from "./Clock"
+import Input from './Input';
+import Button from './Button';
 
 const PageContent = () => {
     const [visibility, setVisibility] = useState(true);
     const [counter, setCounter] = useState(0);
     const [color, setColor] = useState('#F0F2F5');
+    const [name, setName] = useState('');
+    const [confirmedName, setConfirmedName] = useState('...');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setConfirmedName(name);
+    };
 
     return (
         <div className='page-content'>
@@ -30,6 +39,18 @@ const PageContent = () => {
             </div>
 
             <div className='card'>
+                <form onSubmit={handleSubmit}>
+                    <Input
+                        type="text"
+                        placeholder="Name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+
+                    <Button type="submit">Confirm</Button>
+                </form>
+
+                <h3>Seja bem vindo {confirmedName}!</h3>
                 <h3>Faça um campo de texto que exiba uma mensagem de bem-vindo com o nome inserido, alterando o estado.</h3>
             </div>
         </div>
