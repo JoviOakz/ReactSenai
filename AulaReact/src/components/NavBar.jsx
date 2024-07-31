@@ -10,9 +10,9 @@ const NavBar = () => {
             </div>
 
             <div className="buttons">
-                <Button>Krovi</Button>
-                <Button>Krovi</Button>
-                <Button>Krovi</Button>
+                <a>Krovi</a>
+                <a>Krovi</a>
+                <a>Krovi</a>
             </div>
         </div>
     )
