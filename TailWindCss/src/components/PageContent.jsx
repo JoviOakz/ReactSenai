@@ -18,7 +18,7 @@ const PageContent = () => {
     return (
         <div className='w-full h-5/6'>
             <div className='card'>
-                <button className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded transform hover:scale-105 transition-transform duration-300' onClick={ () => setVisibility(!visibility) }>BOTÃO</button>
+                <button className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 shadow-md rounded transform hover:scale-105 transition-transform duration-300' onClick={ () => setVisibility(!visibility) }>BOTÃO</button>
                 {visibility && <h3>Faça um botão que altere a visibilidade de um texto dentro da página. visível ou escondido.</h3>}
             </div>
 
@@ -28,13 +28,13 @@ const PageContent = () => {
             </div>
 
             <div className='card'>
-                <button className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded transform hover:scale-105 transition-transform duration-300' onClick={ () => setCounter(counter + 1) }>BOTÃO</button>
+                <button className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 shadow-md rounded transform hover:scale-105 transition-transform duration-300' onClick={ () => setCounter(counter + 1) }>BOTÃO</button>
                 <h3>Você clicou {counter} vezes.</h3>
                 <h3>Exiba um contador de cliques ao centro da tela.</h3>
             </div>
 
             <div className='card' style={{ backgroundColor: color }}>
-                <button className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded transform hover:scale-105 transition-transform duration-300' onClick={ () => setColor( color == '#F0F2F5' ? 'aquamarine' : '#F0F2F5' ) }>BOTÃO</button>
+                <button className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 shadow-md rounded transform hover:scale-105 transition-transform duration-300' onClick={ () => setColor( color == '#F0F2F5' ? 'aquamarine' : '#F0F2F5' ) }>BOTÃO</button>
                 <h3>Faça um botão que altere a cor de fundo de uma div.</h3>
             </div>
 
