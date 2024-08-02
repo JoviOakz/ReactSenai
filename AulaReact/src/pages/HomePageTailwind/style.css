@@ -13,7 +13,6 @@
 }
 
 .navbar .logo {
-    width: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,14 +22,15 @@
 .navbar img {
     width: 60px;
     border-radius: 20px;
+    margin-right: 20px;
 }
 
 .navbar .buttons {
-    width: 180px;
+    width: 220px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 35px;
 }
 
 .page-content {
