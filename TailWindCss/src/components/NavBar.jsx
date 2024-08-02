@@ -1,15 +1,14 @@
 import Logo from '/logo.jpg'
-import Button from './Button';
 
 const NavBar = () => {
     return (
-        <div className='navbar'>
-            <div className='logo'>
-                <img src={Logo}/>
+        <div className='navbar h-14 w-full bg-purple-300 flex justify-between p-4'>
+            <div className='flex justify-between w-24'>
+                <img className='w-12 h-7 rounded-3xl' src={Logo}/>
                 Krovi
             </div>
 
-            <div className="buttons">
+            <div className='flex justify-between w-32'>
                 <a>Krovi</a>
                 <a>Krovi</a>
                 <a>Krovi</a>
