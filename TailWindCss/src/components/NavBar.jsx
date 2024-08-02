@@ -2,9 +2,9 @@ import Logo from '/logo.jpg'
 
 const NavBar = () => {
     return (
-        <div className='navbar h-14 w-full bg-teal-300 flex justify-between p-4 shadow-md'>
-            <div className='flex justify-between w-24'>
-                <img className='w-12 h-7 rounded-3xl' src={Logo}/>
+        <div className='navbar h-20 w-full bg-teal-300 flex justify-between p-7 shadow-md'>
+            <div className='flex justify-between w-28'>
+                <img className='w-16 h-8 rounded-3xl' src={Logo}/>
                 Krovi
             </div>
 

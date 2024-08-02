@@ -16,7 +16,7 @@ const PageContent = () => {
     };
 
     return (
-        <div className='page-content'>
+        <div className='w-full h-5/6'>
             <div className='card'>
                 <button onClick={ () => setVisibility(!visibility) }>BOTÃO</button>
                 {visibility && <h3>Faça um botão que altere a visibilidade de um texto dentro da página. visível ou escondido.</h3>}
