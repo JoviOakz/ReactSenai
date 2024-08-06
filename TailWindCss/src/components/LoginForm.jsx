@@ -12,7 +12,7 @@ const LoginForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="login-form">
+        <form onSubmit={handleSubmit} className='space-y-1'>
             <Input
                 type="email"
                 placeholder="Email"
