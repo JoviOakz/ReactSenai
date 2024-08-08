@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function App() {
     const [users, setUsers] = useState([]);
@@ -20,16 +22,7 @@ function App() {
     return (
         <>
             <div className="min-h-screen flex flex-col">
-                <div className="bg-blue-600 text-white p-4">
-                    <div className="container mx-auto flex justify-between">
-                        <div className="text-xl font-bold">Lista de Usuários</div>
-                        <ul className="flex space-x-4">
-                            <li><a href="#" className="hover:underline">Home</a></li>
-                            <li><a href="#" className="hover:underline">Sobre</a></li>
-                            <li><a href="#" className="hover:underline">Contato</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <Navbar />
                 <div className="flex-grow container mx-auto p-4">
                     <div className="text-2xl font-bold mb-4">Usuários</div>
                     <ul className="bg-white shadow-md rounded-lg p-4">
@@ -40,11 +33,7 @@ function App() {
                         ))}
                     </ul>
                 </div>
-                <div className="bg-gray-800 text-white p-4">
-                    <div className="container mx-auto text-center">
-                        <div>&copy; 2024 Lista de Usuários. Todos os direitos reservados.</div>
-                    </div>
-                </div>
+                <Footer />
             </div>
         </>
     );
