@@ -1,12 +1,12 @@
 import NavBar from "../components/NavBar";
-import HomeContent from "../components/HomeContent";
+import AboutContent from "../components/AboutContent";
 import Footer from "../components/Footer";
 
 const Home = () => {
     return (
         <div className="h-screen">
             <NavBar />
-            <HomeContent />
+            <AboutContent />
             <Footer />
         </div>
     )

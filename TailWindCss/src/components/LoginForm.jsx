@@ -1,8 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Input from './Input';
 import Button from './Button';
 
 const LoginForm = () => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -25,7 +27,7 @@ const LoginForm = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />
-            <Button type="submit">Login</Button>
+            <Button onClick={() => navigate("/home")} type="submit">Login</Button>
         </form>
     )
 }

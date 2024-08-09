@@ -3,7 +3,7 @@ import Clock from "./Clock"
 import Input from './Input';
 import Button from './Button';
 
-const PageContent = () => {
+const HomeContent = () => {
     const [visibility, setVisibility] = useState(true);
     const [counter, setCounter] = useState(0);
     const [color, setColor] = useState('#F0F2F5');
@@ -57,4 +57,4 @@ const PageContent = () => {
     )
 }
 
-export default PageContent;
+export default HomeContent;
