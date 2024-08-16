@@ -37,22 +37,6 @@ export async function confirmTrip(app: FastifyInstance) {
             data: { is_confirmed: true }
         })
 
-        trip.participant
-
-        // const participants = await prisma.participant.findMany({
-        //     where: {
-        //         tripId : true,
-        //         is_owner: false       
-        //     }
-        // })
-
-        await Promise.all(
-            trip.participant.map(async (participant) => {
-
-                const confirmationLink = `http://localhost:3333/participants/${participant.id}/confirm`
-            })
-        )
-
         return reply.redirect(`http://localhost:3000/trips/${tripId}`);
     });
 }
