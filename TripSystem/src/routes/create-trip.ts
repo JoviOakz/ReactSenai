@@ -1,7 +1,7 @@
 import { FastifyInstance } from "fastify";
 import { ZodTypeProvider } from "fastify-type-provider-zod";
-import { z } from "zod"
-import { prisma } from "../lib/prisma"
+import { z } from "zod";
+import { prisma } from "../lib/prisma";
 import dayjs from "dayjs";
 
 export async function createTrip(app: FastifyInstance) {
@@ -9,8 +9,8 @@ export async function createTrip(app: FastifyInstance) {
         schema: {
             body: z.object({
                 destination: z.string().min(4),
-                starts_at: z.coerce.date(),//convert string date do date date.
-                ends_at: z.coerce.date(),//convert string date do date date.
+                starts_at: z.coerce.date(), //convert string date do date date.
+                ends_at: z.coerce.date(), //convert string date do date date.
                 owner_name: z.string(),
                 owner_email: z.string().email(),
                 emails_to_invite: z.array(z.string().email())
@@ -19,13 +19,11 @@ export async function createTrip(app: FastifyInstance) {
     }, async (request) => {
         const { destination, starts_at, ends_at, owner_name, owner_email, emails_to_invite } = request.body
 
-        if (dayjs(starts_at).isBefore(new Date())) {
-            throw new Error('Invalid trip starts date')
-        }
+        if (dayjs(starts_at).isBefore(new Date()))
+            throw new Error('Invalid trip starts date');
 
-        if (dayjs(ends_at).isBefore(starts_at)) {
-            throw new Error('Invalid trip starts date. Start date is after end date.')
-        }
+        if (dayjs(ends_at).isBefore(starts_at))
+            throw new Error('Invalid trip starts date. Start date is after end date.');
 
         const trip = await prisma.trip.create({
             data: {
